@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/rooms/bedroom.tscn" id="2"]
+
+[node name="PlayerTest" type="Node2D"]
+
+[node name="Bedroom" parent="." instance=ExtResource("2")]
+
+[node name="Player" parent="." instance=ExtResource("1")]
+position = Vector2(120, 100)
